@@ -221,6 +221,7 @@
   .wrapper{
       max-width: 1200px;
       position: absolute;
+      top:20vh;
       
   }
   
@@ -231,7 +232,6 @@
   }
   .carousel2 img{
       width:calc(85%/8);
-      
       cursor: pointer;
       margin: 60px;
       scroll-behavior: smooth;
@@ -272,12 +272,47 @@
           padding:2px 4px 2px 4px;
   }
   @media screen and (max-width:900px) {
-      .carousel img{
+      .carousel2 img{
           width:calc(100%/2);
           height:140px;
           width: 140px;
       }
   }
+  .get{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    position: relative;
+    top:200vh;
+    
+}
+.getSales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap:20px;
+    
+    
+}
+.getSales .salesItem{
+    width:calc(100%/4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.getSales .salesItem img{
+    max-width:150px;
+    max-height: 150px;
+}
+.getSales .salesItem h2{
+  color:#ffc107
+}
+.getSales .salesItem p{
+  color:white;
+}
   
     </style>
 </head>
@@ -329,7 +364,7 @@
         
       </div>
 
-      <div class="slider">
+    <div class="slider">
         <h1 class="Scontent">
           رحلتك نحو النجاح والإبداع
         </h1>
@@ -357,6 +392,34 @@
           <img src="images/common/WhatIsShater.png">
           <p>منصة إلكترونية تعليمية هي الأولى في لبنان. تتيح لك منصة شاطر التعلّم في أي وقت ومن أي مكان يناسبك عبر توفير وسائل تعليمية حديثة تعتمد على إيصال المعلومة بأقل تكلفة وأكبر فائدة وبطريقة تفاعلية مشوقة تلبي كل حاجات المتعلِّمين.</p>
         </div>
+      </div>
+      <div class="get">
+       
+       <div class="getSales">
+          <div class="salesItem">
+            <img src="images/pay/package1.png" alt="">
+            <h2>شخص واحد</h2>
+            <p>43 $</p>
+          </div>
+          <div class="salesItem">
+            <img src="images/pay/package2.png" alt="">
+            <h2>شخصين</h2>
+            <p>41 $ عن كل مشترك</p>
+          </div>
+          <div class="salesItem">
+            <img src="images/pay/package4.png" alt="">
+            <h2>4 أشخاص</h2>
+            <p>40 $ عن كل مشترك</p>
+          </div>
+          <div class="salesItem">
+            <img src="images/pay/package school.png" alt="">
+            <h2>مدرسة</h2>
+            <p>( أكثر من 20 تلميذ )
+              36 $ عن كل مشترك</p>
+          </div>
+      
+        </div>
+    
       </div>
       <script>
         let leftArrow = document.getElementById('leftArrow'),
