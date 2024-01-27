@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="images/favicon/SaterLogo.png" type="image/png">
     
     
@@ -14,9 +16,11 @@
         padding: 0;
       }
       body{
-          background-color: #1E1E1E;
-          margin: 0;
+        background-color: #1E1E1E;
+        margin: 0;
         padding: 0;
+        width: 100%;
+        
       }
       .nav{
         margin: 0;
@@ -28,14 +32,14 @@
           list-style-type: none;
       }
       .a6{
-          position: fixed;
-          top:0;
-          right:0;
-          margin-right: 10px;
-          margin-top: 10px;
+          position: relative;
+          top:1vh;
+          left: 162vh;
+          
           font-family: NizarCoconKurdishBold;
           font-weight: bold;
           cursor:pointer;
+          
       }
       .a5{
           position: relative;
@@ -49,14 +53,15 @@
           font-family: NizarCoconKurdishBold;
           font-weight: bold;
           cursor:pointer;
-          background-color: #444;
+          background-color: #131111;
           border-radius: 12px;
           padding-left: 20px;
           padding-right: 20px;
-          padding-top: 5px;
-          padding-bottom: 5px;
+          padding-top: 0px;
+          padding-bottom: 0px;
           max-width: 1000px;
-          flex: 1;
+          height: 30px;
+          
           
       }
       .a4 img{
@@ -127,12 +132,14 @@
         position: fixed;
         right:0;
         top:105px;
+        z-index: 1;
         background-color: rgba(255,193,7,.68);
         padding: 0px 12px 0px 4px;
         border-radius:5px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        cursor:pointer;
       }
      .text{
         font-size: 20px;
@@ -163,7 +170,7 @@
      }
      .carousel{
       position: relative;
-      top:5vh;
+      top:2vh;
      }
      .carousel .carousel-indicators{
       bottom: 18px;
@@ -281,10 +288,11 @@
   .get{
     display: flex;
     justify-content: center;
-    
+    width:200px;
     align-items: center;
     position: relative;
-    top:200vh;
+    top:60vh;
+    
     
 }
 .getSales{
@@ -292,16 +300,26 @@
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    width:50%;
     gap:20px;
     
+   
     
 }
+@media screen and (max-width:900px) { 
+  .getSales{
+    flex-wrap: wrap;
+  }
+}
 .getSales .salesItem{
-    width:calc(100%/4);
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 200%;
+    
 }
 .getSales .salesItem img{
     max-width:150px;
@@ -312,8 +330,295 @@
 }
 .getSales .salesItem p{
   color:white;
+  width:165px;
+  height: 140px;
+}
+.getHeader{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  top:55vh;
+}
+.getWay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-bottom: 3vh;
+}
+.getWay p{
+  color:white;
+  position: relative;
+  top: 55vh;
+
+}
+.a1get1{
+  position: relative;
+  top:55vh;
+  right:43vh;
+  font-size: 23px;
+  font-family: NizarCoconKurdishBold;
+  font-weight: bold;
+  color: #fff;
+  background-color: #EF582B;
+  border-radius: 4px;
+  cursor:pointer;
+  padding:2px 4px 2px 4px;
+  
+}
+.a1get2{
+  position: relative;
+  top:55vh;
+  left:43vh;
+  font-size: 23px;
+  font-family: NizarCoconKurdishBold;
+  font-weight: bold;
+  color: #fff;
+  background-color: #EF582B;
+  border-radius: 4px;
+  cursor:pointer;
+  padding:2px 4px 2px 4px;
+  
+}
+.a1get3{
+  position: relative;
+  top:100vh;
+  left:65vh;
+  text-align: center;
+  width: 15%;
+  font-size: 23px;
+  font-family: NizarCoconKurdishBold;
+  font-weight: bold;
+  color: #fff;
+  background-color: #EF582B;
+  border-radius: 4px;
+  cursor:pointer;
+  padding:2px 4px 2px 4px;
+  
+}
+.a1get4{
+  position: relative;
+  top:6vh;
+  
+  text-align: center;
+  
+  font-size: 23px;
+  font-family: NizarCoconKurdishBold;
+  font-weight: bold;
+  color: #fff;
+  background-color: #EF582B;
+  border-radius: 4px;
+  cursor:pointer;
+  padding:2px 4px 2px 4px;
+  margin-bottom: 60px;
+}
+.youtubeShater{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:57vh;
+  background: #ffda3b;
+  width: 100%;
+
+}
+.captionBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.captionBox img{
+  width:16%;
+}
+.captionBox p{
+  direction:rtl;
+  color: #000;
+  font-weight: 400;
+}
+.captionBox h5{
+  color:black;
+  font-size:medium;
+  font-weight: bold;
+}
+.captionBox .yt{
+  margin-top: 5px;
+  color:white;
+  background: red;
+  border: solid red 0px;
+  border-radius: 2px;
+  width: 85px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.captionBox .yt i{
+  
+  margin: 5px;
+}
+.captionBox .viewMore{
+  margin-top: 10px;
+  border: 0px;
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+
+.testimonials{
+  position: relative;
+  top:80vh;
+  
+  
+}
+.testimonials p,h6,hr{
+  color:rgb(255, 255, 255);
+  width: 90%;
+}
+.testimonials h6{
+  margin-left: 210px;
+  margin-top: 20px;
+}
+.testimonials hr{
+  width: 25%;
+  background: #EF582B;
+  height: 2px;
+  font-weight: 800;
+}
+.tesmonialItem h1{
+  color:#EF582B;
+}
+.sliderjq{
+  width: 70%;
+  
+}
+
+
+.tesmonialItem{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important ;
+  
+}
+.tesmonialItem p{
+  direction: rtl;
+}
+
+.reportCn{
+  position: relative;
+  top:95vh;
+  
+  width: 100%;
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: center  ;
+  justify-content: center  ;
+  
+  
+}
+.reportItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center  ;
+  justify-content: center  ;
+}
+.reportItem img{
+  max-width: 150px;
+  max-height: 150px;
+}
+.reportItem h1{
+  color:#ffc107;
+  font-size: 30px;
+}
+.reportItem h2{
+  text-align: center;
+  color:white;
+  font-size: 16px;
+  width: 70%;
+}
+.footer{
+  position: relative;
+  top:115vh;
+  
+  margin-bottom: 10px;
+  
+  width:100%;
+}
+.footer a{
+  text-decoration: none;
+  color:white;
+  font-size: 23px;
+  margin-left:-200px ;
+}
+.footer img{
+  width:70px;
+  height:auto;
+  margin: 2px 2px 20px 2px;
+}
+.succesmn{
+  background: #EFEFEF;
+  width: 100%;
+  position: relative;
+  top: 110vh;
+  height:420px;
+  width:1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1516px;
+  margin-left: -225px;
+}
+.success {
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  position: relative;
+  top:4vh;
+  margin: 0;
+}
+.succesmn h1{
+  color:#2A2A2A;
+  font-weight: bold;
 }
   
+
+.success .successItem{
+  width: calc(100%/5);
+  padding :  0px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.success .successItem img{
+  width: 15%;
+  margin: 5px;
+}
+.successItem h1{
+  color:#2A2A2A !important;
+  font-size: 30px;
+  font-weight: bold;
+  
+  z-index: 1;
+}
+.success .successItem p{
+  color: #2A2A2A;
+  font-size: 18px;
+  font-weight: 500;
+  direction: rtl;
+  width:70%;
+  height:110px;
+}
+
+
     </style>
 </head>
 <body>
@@ -325,7 +630,7 @@
             <li class="a3">سجل الدخول</li>
             <li class="a4"><img src="images/common/share.png" alt=""></li>
             <li class="a5">لتفعيل بطاقة شاطر, اضغط هنا </li>
-            <li class="a6"><img src="images/favicons/SaterLogo.png" alt=""></li>
+            <li class="a6"><img src="images/favicon/SaterLogo.png" alt=""></li>
         </ul>
     </div>
     <div id="carouselIndicators" class="carousel slide">
@@ -360,7 +665,7 @@
     </div>
       <div class="how">
         <span><img src="images/common/whatsappLogo.png"></span>
-        <span class="text">كيف تستخدم شاطر ؟</span>
+        <span class="text">كيف تستخدم شاطر</span>
         
       </div>
 
@@ -393,6 +698,7 @@
           <p>منصة إلكترونية تعليمية هي الأولى في لبنان. تتيح لك منصة شاطر التعلّم في أي وقت ومن أي مكان يناسبك عبر توفير وسائل تعليمية حديثة تعتمد على إيصال المعلومة بأقل تكلفة وأكبر فائدة وبطريقة تفاعلية مشوقة تلبي كل حاجات المتعلِّمين.</p>
         </div>
       </div>
+      <h1 class="getHeader">أطلب بطاقة شاطر</h1>
       <div class="get">
        
        <div class="getSales">
@@ -421,6 +727,146 @@
         </div>
     
       </div>
+      <div class="getWay">
+        <div class="a1get1">أطلب أونلاين</div> 
+        <p>أو</p>
+        <div class="a1get2">أطلب عبر واتساب </div> 
+
+      </div>
+      <div class="youtubeShater">
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/7IJLhprNxvs?si=AwzKf8TWOU47yBom" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="captionBox">
+          <img src="images/common/logoShaterNew.png" alt="">
+          <p>يسرنا إطلاق قناة شاطر التعليمية المجانية على يوتيوب. سوف يتم عرض باقة من أهم المواضيع العلمية والثقافية التي تهم مختلف المستويات و المراحل بأسلوب علمي بسيط و ممتع.</p>
+          <h5>لمشاهدة المزيد إشترك في قناة شاطر</h5>
+          <button class="yt"><i class="fa fa-youtube-play" aria-hidden="true"></i>youTube</button>
+          <button class="viewMore">مشاهدة المزيد</button>
+        </div>
+      </div>
+
+        <div class="sliderjq">
+          <div class="row testimonials">
+            <div class="tesmonialItem col-md-12">
+              <img src="images/testmonials/DefaultTestimonial-male.png" alt="">
+              <h1>جوزيف</h1>
+              <h6>الرابع على لبنان</h6>
+              <hr>
+              <p>"تركت المدرسة منذ ٧ سنوات. عندما قررت تقديم طلب حر في فرع الاقتصاد، وأثناء بحثي عن مصادر للدروس، صادفني فيديو ترويجي من الدروس على منصة شاطر وفوجئت بجمالية العمل وأسلوب الشرح المبسط. اشتركت بالمنصة ودرست عليها كل المواد، ولم أنجح فقط، بل نلت درجة جيد في الامتحان الرسمي."</p>
+            </div>
+            <div class="tesmonialItem col-md-12">
+              <img src="images/testmonials/DefaultTestimonial-female.png" alt="">
+              <h1>كاتيا</h1>
+              <h6>الرابع على لبنان</h6>
+              <hr>
+              <p>
+                "لم تحضر ابنتي دروسها عبر الإنترنت مع معلمي مدرستها لأنها كانت تشعر بالملل. اشتركت بمنصة شاطر قبل شهرين من الامتحانات الرسمية ودرست عليها فقط وحصلت على نتيجة 18.11 / 20 من دون أي مساعدة إضافية.
+  
+  "
+            </p>
+            </div>
+            <div class="tesmonialItem col-md-12">
+              <img src="images/testmonials/DefaultTestimonial-male.png" alt="">
+              <h1>جوزيف</h1>
+              <h6>الرابع على لبنان</h6>
+              <hr>
+              <p>"تركت المدرسة منذ ٧ سنوات. عندما قررت تقديم طلب حر في فرع الاقتصاد، وأثناء بحثي عن مصادر للدروس، صادفني فيديو ترويجي من الدروس على منصة شاطر وفوجئت بجمالية العمل وأسلوب الشرح المبسط. اشتركت بالمنصة ودرست عليها كل المواد، ولم أنجح فقط، بل نلت درجة جيد في الامتحان الرسمي."</p>
+            </div>
+            <div class="tesmonialItem col-md-12">
+              <img src="images/testmonials/DefaultTestimonial-female.png" alt="">
+              <h1>كاتيا</h1>
+              <h6>الرابع على لبنان</h6>
+              <hr>
+              <p>
+                "لم تحضر ابنتي دروسها عبر الإنترنت مع معلمي مدرستها لأنها كانت تشعر بالملل. اشتركت بمنصة شاطر قبل شهرين من الامتحانات الرسمية ودرست عليها فقط وحصلت على نتيجة 18.11 / 20 من دون أي مساعدة إضافية.
+  
+  "
+            </p>
+            </div>
+            <div class="tesmonialItem col-md-12">
+              <img src="images/testmonials/DefaultTestimonial-male.png" alt="">
+              <h1>جوزيف</h1>
+              <h6>الرابع على لبنان</h6>
+              <hr>
+              <p>"تركت المدرسة منذ ٧ سنوات. عندما قررت تقديم طلب حر في فرع الاقتصاد، وأثناء بحثي عن مصادر للدروس، صادفني فيديو ترويجي من الدروس على منصة شاطر وفوجئت بجمالية العمل وأسلوب الشرح المبسط. اشتركت بالمنصة ودرست عليها كل المواد، ولم أنجح فقط، بل نلت درجة جيد في الامتحان الرسمي."</p>
+            </div>
+            <div class="tesmonialItem col-md-12">
+              <img src="images/testmonials/DefaultTestimonial-female.png" alt="">
+              <h1>كاتيا</h1>
+              <h6>الرابع على لبنان</h6>
+              <hr>
+              <p>
+                "لم تحضر ابنتي دروسها عبر الإنترنت مع معلمي مدرستها لأنها كانت تشعر بالملل. اشتركت بمنصة شاطر قبل شهرين من الامتحانات الرسمية ودرست عليها فقط وحصلت على نتيجة 18.11 / 20 من دون أي مساعدة إضافية.
+  
+  "
+            </p>
+            </div>
+        </div>
+      
+      
+        <div class="reportCn">
+          <div class="reportItem">
+            <img src="images/report/section report-01.png" alt="">
+            <h1>1000+</h1>
+            <h2>فيديو</h2>
+          </div>
+          <div class="reportItem">
+            <img src="images/report/section report-02.png" alt="">
+            <h1>2M+</h1>
+            <h2>ساعة مشاهدة</h2></div>
+          <div class="reportItem">
+            <img src="images/report/section report-03.png" alt="">
+            <h1>100+</h1>
+            <h2>مدرسة و ثانوية اشتركت لطلابها</h2>
+          </div>
+          <div class="reportItem">
+            <img src="images/report/section report-05.png" alt="">
+            <h1>20+
+            </h1>
+            <h2>مرتبة على صعيد لبنان</h2>
+          </div>
+          <div class="reportItem">
+            <img src="images/report/section report-04.png" alt="">
+            <h1>15K+</h1>
+            <h2>مشترك</h2>
+          </div>
+        </div>
+        <div class="a1get3">إنشاء حساب جديد </div> 
+        <div class="succesmn">
+          <h1>النجاح يبدأ من هنا</h1>
+          <div class="success">
+            <div class="successItem">
+              <img src="images/success/play.png" alt="">
+              <h1>مكتبة الفيديو</h1>
+              <p>حافظ على شغفك بالتعلّم من خلال مشاهدة دروسك بطريقة مشوقة وجذابة بقيادة أمهر الأساتذة</p>
+            </div>
+            <div class="successItem">
+              <img src="images/success/summaries.png" alt="">
+              <h1>الدروس والملخصات</h1>
+              <p>راجع دروسك بشكل مفصّل أو مختصر بشكل يناسب احتياجاتك في كل مادة</p>
+            </div>
+            <div class="successItem">
+              <img src="images/success/exam.png" alt="">
+              <h1>الاختبارات</h1>
+              <p>تحقق من مستوى معلوماتك عبر تقييم مجموعة واسعة من المهارات مثل المعرفة والفهم والتحليل</p>
+            </div>
+            <div class="successItem">
+              <img src="images/success/practice.png" alt="">
+              <h1>التمارين</h1>
+              <p>تدرّب على الأنماط المتعددة من الأسئلة وتعرّف على طرائق الإجابة الصحيحة</p>
+            </div>
+            <div class="successItem">
+              <img src="images/success/Template.png" alt="">
+              <h1>نماذج مسابقات</h1>
+              <p>قيّم تجربتك عبر مجموعة من المسابقات الشاملة مع وقت محدد وباريم مفصّل لتوزيع العلامات</p>
+            </div>
+          </div>
+          <div class="a1get4">إبدا الان</div> 
+        </div>
+        <div class="footer">
+          <a href="index.html"><strong>Copyright © 2024<span><img src="/images/favicon/SaterLogo.png"></span>All rights reserved.</strong></a>
+        </div>
       <script>
         let leftArrow = document.getElementById('leftArrow'),
         carousel=document.getElementById('carousel')
@@ -436,6 +882,24 @@
         carousel.scrollLeft += firstImgWidth;
         })
       </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script type="text/javascript">
+        
+        $(document).ready(function(){
+          $('.testimonials').slick({
+             infinite: true,
+             slidesToShow: 3,
+             slidesToScroll: 3
+          });
+       });
+
+       
+      </script>
+      
+      
+      
+      
       <script src="https://kit.fontawesome.com/3f93b463b4.js" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
       
