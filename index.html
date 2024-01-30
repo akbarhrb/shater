@@ -202,6 +202,7 @@
       top:45vh;
       width:100%;
       display:flex;
+      flex-wrap: wrap;
       justify-content: center;
       background-color: #dcdcdc;
     }
@@ -278,13 +279,7 @@
           cursor:pointer;
           padding:2px 4px 2px 4px;
   }
-  @media screen and (max-width:900px) {
-      .carousel2 img{
-          width:calc(100%/2);
-          height:140px;
-          width: 140px;
-      }
-  }
+ 
   .get{
     display: flex;
     justify-content: center;
@@ -307,11 +302,7 @@
    
     
 }
-@media screen and (max-width:900px) { 
-  .getSales{
-    flex-wrap: wrap;
-  }
-}
+
 .getSales .salesItem{
     
     display: flex;
@@ -416,6 +407,7 @@
 .youtubeShater{
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -493,6 +485,7 @@
 .sliderjq{
   width: 70%;
   
+  
 }
 
 
@@ -514,6 +507,7 @@
   width: 100%;
   flex-direction: row-reverse;
   display: flex;
+  flex-wrap: wrap;
   align-items: center  ;
   justify-content: center  ;
   
@@ -563,10 +557,10 @@
   width: 100%;
   position: relative;
   top: 110vh;
-  height:420px;
-  width:1300px;
+  
   display: flex;
   flex-direction: column;
+  
   align-items: center;
   justify-content: center;
   width: 1516px;
@@ -575,8 +569,9 @@
 .success {
   
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
+  
   justify-content: space-around;
   position: relative;
   top:4vh;
@@ -616,6 +611,30 @@
   direction: rtl;
   width:70%;
   height:110px;
+}
+@media screen and (max-width:900px) {
+  .carousel2 img{
+      width:calc(100%/2);
+      height:140px;
+      width: 140px;
+  }
+}
+@media screen and (max-width:900px) { 
+  .getSales{
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width:900px){
+  .slider .Scontent{
+    width:auto;
+  }
+  .youtube {
+    width: auto;
+  }
+  .captionBox p{
+    width: auto;
+  }
+  
 }
 
 
